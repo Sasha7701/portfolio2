@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>Alex's - <%= title %></title>
+		<link rel="stylesheet" type="text/css" href="/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="/main.css">
+	    <link rel="stylesheet" type="text/css" href="/pills.css">
+	</head>
+	<body>
+		<div class="container">
+    <div class="nav">
+      <h1>Alex Polotskiy</h1>
+          <ul class="menu">
+            <li><a href="/about">Page-1</a></li>
+                <li><a href="/portfolio">Page-2</a></li>
+              <li><a href="/country">Page-3</a></li>
+          </ul>
+    
+    </div>
+		<main>
+				<%- include("pages/" + page, pageArg); %>
+			
+			</main>
+	 
+			
+		</div>
+	
+	<footer>
+	<a href="#"><img class="icon1" src="http://www.worldyogacenter.com/wp-content/uploads/2014/01/facebooktransparent.png"/></a>
+
+	<!-- <a href="#"><img class="icon2" src="https://farm8.staticflickr.com/7058/6937175085_ea4714c6a8_b.jpg"/></a>
+ -->
+<a href="#"><img class="icon2" src="https://farm8.staticflickr.com/7205/6779161210_c237861b66_b.jpg"/></a>
+
+	
+	<a href="#"><img class="icon3" src="http://flaticns.com/web-icons/github.png"/></a>
+ 
+ </footer>
+	</body>
+</html>

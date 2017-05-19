@@ -1,0 +1,28 @@
+<title><%= title %></title>
+
+<div class = "my-ejs">
+<% if (country) { %>
+<h2 class="country-name"><%= country.name %></h2>
+<h2 class="country"><%= country.region %><h2>
+ <h2 class="country"><%= country.nativeName %></h2>
+<h2 class="country"><%= country.population %></h2>
+<h2 class="country"><%= country.code %></h2>
+<img src="<%= country.flag %>" class = "pic-ejs"/>
+<% }  else  { 
+	
+	console.error("ERROR can't read that");
+    
+} %>
+         
+</div>
+
+
+
+ 
+
+
+
+
+
+
+</div>

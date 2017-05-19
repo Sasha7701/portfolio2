@@ -11,10 +11,11 @@
   width: 100%;
   height: 100%;
   background-color: darkgrey;
-  
+   
 }
 
 .nav{
+  z-index: 2;
   width: 100%;
   background-color: black;
   height: 80px;
@@ -182,6 +183,7 @@ footer{
   margin-left: 12px;
   margin-right: 0px;
   border-radius: 25%;
+  
 }
 
 .icon3{
@@ -225,3 +227,49 @@ footer{
       position: none;
    }
   }
+
+/*for the next page portfolio*/
+
+.my-ejs {
+  padding-top: 120px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  clear: both;
+}
+
+.pic-ejs {
+  height: 200px;
+  margin: 20px;
+}
+
+.country-name {
+  text-align: center;
+  font-size: 45px;
+  color: white;
+  margin-bottom: 15px;
+  letter-spacing: 0.8px;
+}
+
+.country {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.Error {
+  color: tomato;
+  letter-spacing: 0.8px;
+}
+  
+
+.errText {
+  font-size: 18px;
+  color: black;
+  margin-bottom: 5px;
+  text-align: center;
+  
+}  
+  

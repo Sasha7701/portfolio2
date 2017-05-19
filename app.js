@@ -1,29 +1,24 @@
 const express = require("express");
 const app = express();
+const portfolioRouter = require("./routers/portfolio");
+const countryRouter = require("./routers/country")
 app.set("view engine", "ejs");
 
 app.use(express.static("assets"));
+const countries = require("./json/countries.json");
+// console.log(countries);
 
-app.get("/", function(req, res) {
-	console.log("Serving up homepage...");
-	res.render("Personal");
-	skills: "Express,"
+app.use("/", portfolioRouter);
+app.use("/", countryRouter);
+
+
+app.get("*", function(req, res) {    
+
+res.render("page404");
+// res.send("This is not a valid page, go away!");
 });
 
-
-
-
-// app.get("/login", function(req, res) {
-// 	console.log("Serving up homepage...");
-// 	res.render("login");
-// });
-
-// app.get("/logout", function(req, res) {
-// 	console.log("Serving up homepage...");
-// 	res.render("logout");
-// });
-
-app.listen(3000, function(){
+app.listen(3000, function() {
 	console.log("Your answer is available at localhost:3000!");
 
 });
