@@ -13,7 +13,7 @@ app.use("/", countryRouter);
 
 
 app.get("*", function(req, res) {    
-
+res.status(404);
 res.render("page404");
 // res.send("This is not a valid page, go away!");
 });
